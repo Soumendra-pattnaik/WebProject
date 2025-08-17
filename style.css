@@ -1,0 +1,217 @@
+.top-left-contact {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      z-index: 10;
+    }
+
+    .top-left-contact a {
+      color: #fff;
+      font-size: 1.2em;
+      text-decoration: none;
+      transition: transform 0.3s;
+    }
+
+    .top-left-contact a:hover {
+      color: #ffeb3b;
+      transform: scale(1.2);
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body.light-mode {
+      background: #fff;
+      color: #333;
+    }
+
+    body.dark-mode {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #e0f7fa;
+    }
+
+    header {
+      padding: 40px 20px 20px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      display: inline-block;
+      background: #ffeb3b;
+      color: #333;
+      padding: 10px 20px;
+      border-radius: 50px;
+      animation: bounce 2s infinite;
+    }
+
+    .headline {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    #typewriter {
+      font-size: 2.5em;
+      font-weight: 700;
+      white-space: nowrap;
+      border-right: 4px solid #fff;
+      width: fit-content;
+      margin: 0 auto 10px;
+      overflow: hidden;
+    }
+
+    .contact-icons {
+      margin-top: 20px;
+    }
+
+    .contact-icons a {
+      color: #fff;
+      margin: 0 15px;
+      font-size: 1.5em;
+      transition: transform 0.3s;
+      display: inline-block;
+    }
+
+    .contact-icons a:hover {
+      transform: scale(1.2);
+      color: #ffeb3b;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: inherit;
+      margin: 10px 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    .theme-toggle {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #ffeb3b;
+      color: #333;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+    }
+
+    .theme-toggle:hover {
+      background: #fff176;
+      color: #000;
+      transform: scale(1.1);
+      box-shadow: 0 0 10px #ffeb3b;
+    }
+
+    .resume-download {
+      margin-top: 20px;
+    }
+
+    .resume-download a {
+      background: #ffeb3b;
+      padding: 10px 20px;
+      border-radius: 8px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .resume-download a:hover {
+      background: #fff176;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 2em;
+      margin-bottom: 20px;
+      border-bottom: 2px solid currentColor;
+      display: inline-block;
+    }
+
+    .project, .resume-item {
+      background: rgba(0, 123, 255, 0.1);
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .project:hover, .resume-item:hover {
+      transform: scale(1.02);
+      background: rgba(0, 123, 255, 0.2);
+    }
+
+    footer {
+      background: rgba(0, 0, 51, 0.4);
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .top-left-contact {
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 1em;
+        top: auto;
+        bottom: 10px;
+        left: 10px;
+      }
+
+      .contact-icons {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+      }
+      #typewriter {
+        font-size: 1.5em;
+      }
+
+      nav a {
+        margin: 5px 10px;
+      }
+
+      .section-title {
+        font-size: 1.5em;
+      }
+    }
